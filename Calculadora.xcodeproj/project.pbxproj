@@ -192,7 +192,7 @@
 				TargetAttributes = {
 					C8DD71311BBB48290078AB51 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 65U85CN5YZ;
+						DevelopmentTeam = KH426L7QKR;
 					};
 					C8DD71451BBB48290078AB51 = {
 						CreatedOnToolsVersion = 7.0;
@@ -404,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bonetti.giovanni.Calculadora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -418,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bonetti.giovanni.Calculadora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -488,6 +490,7 @@
 				C8DD715C1BBB48290078AB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8DD715D1BBB48290078AB51 /* Build configuration list for PBXNativeTarget "CalculadoraTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +499,7 @@
 				C8DD715F1BBB48290078AB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8DD71601BBB48290078AB51 /* Build configuration list for PBXNativeTarget "CalculadoraUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +508,7 @@
 				C8DD71621BBB48290078AB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
