@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -128,43 +128,53 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xB-cA-04G">
-                                <rect key="frame" x="200" y="56" width="50" height="50"/>
+                                <rect key="frame" x="200" y="230" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.57008216113350763" blue="0.034241263700266991" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="/">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBa-6L-dIh"/>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y28-Ko-zaC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iv-nX-loo">
-                                <rect key="frame" x="200" y="114" width="50" height="50"/>
+                                <rect key="frame" x="200" y="172" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.57008216113350763" blue="0.034241263700266991" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWw-pF-x2B"/>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TuO-gd-kSh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTq-7s-1Sz">
-                                <rect key="frame" x="200" y="172" width="50" height="50"/>
+                                <rect key="frame" x="200" y="114" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.57008216113350763" blue="0.034241263700266991" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LGm-NH-tby"/>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUg-P5-h5J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-yS-zLD">
-                                <rect key="frame" x="200" y="230" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.66666666666666663" green="0.57008216113350763" blue="0.034241263700266991" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="=">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piQ-pq-jq0">
+                                <rect key="frame" x="142" y="230" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.57008216109999998" blue="0.034241263700000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="⏎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPq-hr-1lP"/>
+                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SoX-JY-MFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-yS-zLD">
+                                <rect key="frame" x="200" y="56" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.57008216113350763" blue="0.034241263700266991" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TiR-x7-Km1"/>
                                 </connections>
                             </button>
                         </subviews>
