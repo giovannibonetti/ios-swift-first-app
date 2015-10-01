@@ -63,21 +63,20 @@ class ViewController: UIViewController {
         if stack.count < 2 {
             return
         }
-        let last: Double = stack.removeLast()
-        let first: Double = stack.removeLast()
 
         switch operation! {
-            case "+":
-                displayValue = first + last
-            case "-":
-                displayValue = first - last
-            case "X":
-                displayValue = first * last
-            case "/":
-                displayValue = first / last
-            default:
-                break
+            case "+": performOperation { return $0 + $1 }
+            case "-": performOperation {(a, b) in return a - b}
+            case "X": performOperation {(a, b) in return a * b}
+            case "/": performOperation {(a, b) in return a / b}
+            default:  break
         }
+    }
+    
+    func performOperation(operation: (Double, Double) -> Double) {
+        let b = stack.removeLast()
+        let a = stack.removeLast()
+        displayValue = operation(a, b)
     }
 }
 
